@@ -6,10 +6,7 @@ export default class Dots extends Component {
         super(props);
     }
 
-
-
     render() {
-    	console.log(this.props)
         return (
           <nav className="carousel">
 	        <input id="carousel-item-1" 

@@ -1,9 +1,11 @@
-import One from '../Images/One.png';
-import Two from '../Images/Two.png';
-import Three from '../Images/Three.png';
-import Four from '../Images/Four.png';
-import Five from '../Images/Five.png';
-import Six from '../Images/Six.png';
+import {
+	One,
+	Two,
+	Three,
+	Four,
+	Five,
+	Six
+} from '../Images/index'
 
 const state = [
 	{
@@ -41,4 +43,4 @@ const state = [
 ]
 
 
-export default state;
+export default  state;
