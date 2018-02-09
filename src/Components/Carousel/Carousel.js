@@ -10,17 +10,16 @@ export default class Carousel extends Component {
         super(props);
     }
 
-    changeImage(){
-
+    changeImage = (e) => {
+    	console.log(e.target.id)
     }
 
     render() {
         return (
-        	 <div> 
-        	 	 <img className="Carouselmage img-fluid" alt="" src={Carouselmage} />
-        	 	 <Dots/>
-        
-        	  </div>
+        	 <div>
+        	 	<img className="Carouselmage img-fluid" alt="" src={Carouselmage} />,
+        	 	 <Dots change={this.changeImage}/>
+        	 </div>
         );
     }
 }
