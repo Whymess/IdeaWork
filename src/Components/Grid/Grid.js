@@ -5,9 +5,6 @@ import {
 import state from '../../Helpers/InitalStateOfApp'
 
 export default class Grid extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     renderFirstRow(){
     	return state.map((el, i) => {
@@ -18,6 +15,8 @@ export default class Grid extends Component {
 				    </div>	
 	    		)
     		} 
+
+    		return false 
     	})
     }
 
@@ -30,6 +29,9 @@ export default class Grid extends Component {
 				    </div>	
 	    		)
     		} 
+    		
+    		return false
+    		
     	})
     }
 
