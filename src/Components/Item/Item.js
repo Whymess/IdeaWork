@@ -7,7 +7,7 @@ export default (props) => {
 return (
   <div className="Item">
 	<div className="card">
-        <img className="card-img-top" alt="" src={props.photo} />
+        <img className="card-img-top img-fluid" alt="" src={props.photo} />
         <div className="card-block">
           <h4 className="card-title">{props.catchPhrase}</h4>
           <p className="card-text">{props.date}</p>

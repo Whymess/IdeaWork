@@ -24,18 +24,18 @@ export default class Carousel extends Component {
 
     componentDidMount(){
     
-    	let changePicture = setInterval(() => { 
-    		let {count} = this.state
-    		let imageArray = [Carouselmage, Carouselmagecopyone, Carouselmagecopytwo]
-    		this.setState((state) => ({count : state.count + 1}))
-    		this.setState((state) => ({currentImage : imageArray[count]}))
+    	// let changePicture = setInterval(() => { 
+    	// 	let {count} = this.state
+    	// 	let imageArray = [Carouselmage, Carouselmagecopyone, Carouselmagecopytwo]
+    	// 	this.setState((state) => ({count : state.count + 1}))
+    	// 	this.setState((state) => ({currentImage : imageArray[count]}))
 
-    		if(count === 2){
-    			this.setState((state) => ({count: 0}))
-    		}
+    	// 	if(count === 2){
+    	// 		this.setState((state) => ({count: 0}))
+    	// 	}
     		
 
-    	}, 3000);
+    	// }, 3000);
     }
 
 

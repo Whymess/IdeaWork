@@ -4,3 +4,4 @@ export { default as Item } from './Item/Item';
 export { default as Grid } from './Grid/Grid';
 export { default as Carousel } from './Carousel/Carousel';
 export { default as Dots} from './Dots/Dots';
+export { default as Header} from './Header/Header';
