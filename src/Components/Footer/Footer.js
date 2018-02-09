@@ -7,7 +7,6 @@ export default (props) => {
 		<div className="Footer">
 			2017 -- SPARTA PLAESENT - INSTGRAM FACEBOOK TWITTER
 		</div>
-
 		)
 	
 }

@@ -5,8 +5,6 @@ import Four from '../Images/Four.png';
 import Five from '../Images/Five.png';
 import Six from '../Images/Six.png';
 
-
-
 const state = [
 	{
 		date: 'FEBRUARY 2 2017',

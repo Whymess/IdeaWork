@@ -1,0 +1,35 @@
+nav.carousel:hover {
+  cursor: default;
+}
+
+/* Hide the radio button */
+nav.carousel input[type=radio] {
+  display: none;
+}
+
+/* All styling takes place on the label element */
+nav.carousel label {
+  display: inline-block;
+  background: #ddd;
+  overflow: hidden;
+  text-indent: -999px;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  box-shadow: inset 0 1px 1px 0 #999;
+}
+nav.carousel label:hover {
+  background: #bbb;
+  cursor: pointer;
+  box-shadow: inset 0 1px 1px 0 #777;
+}
+nav.carousel input:checked + label {
+  background: linear-gradient(#00CFFF, #1584bc);
+  box-shadow: inset 0 0 1px 1px #087DC0;
+}
+
+.carousel {
+      position: relative;
+    left: 50%;
+    bottom: 78px;
+}
