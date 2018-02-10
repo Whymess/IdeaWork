@@ -4,17 +4,23 @@ import '../../CSS/Header.css'
 
 
 export default (props) => {
-
 	return (
-			  <div className="row justify-content-around header_main">
-			    <div className="col-4">
-			      <img className="logo img-fluid" alt="" 
+			<div className="container">
+			  <div className="row">
+			 		   <div className="col">
+					       <img className="logo img-fluid" alt="" 
 			        	 	src={Logo} />
-			    </div>
-			    <div className="col-4">
-			      	<span className="header_info"> Login 212-123-4567 </span>
-			    </div>
+					    </div>
+					    <div className="col">
+					     	<span className="header_info"> Login 212-123-4567 
+					     	<i className="fa fa-align-justify"  />
+
+					     	</span>
+
+					    </div>
 			  </div>
+			</div>
+			 
 		)
 	
 }
