@@ -4,8 +4,9 @@
 }
 
 .card-text {
-	font-size: .5em;
-	font-family: ACaslonPro;
+	font-size: 1em;
+    font-family: ACaslonPro;
+    margin-top: 1.5em;
 }
 
 @font-face {
