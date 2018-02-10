@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import '../../CSS/Dots.css'
 
 export default class Dots extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
           <nav className="carousel">

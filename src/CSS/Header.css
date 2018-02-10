@@ -1,10 +1,5 @@
-.Header {
+.header_info {
 	position: relative;
-    left: 17%;
-    padding-bottom: 1em;
-}
-
-.Header_info {
-	position: relative;
-	left: 40%;
+    top: 32%;
+    left: 73%;
 }
