@@ -7,7 +7,7 @@ import {
 import {
 	Carouselmage,
 	Carouselmagecopyone,
-Carouselmagecopytwo
+    Carouselmagecopytwo
 } from '../../Images/index'
 
 
@@ -16,22 +16,20 @@ export default class Carousel extends Component {
         super(props);
         this.state = {
         	currentImage: '',
-        	count: 0
+            picturePostion: 0
         }
 
-      
+        this.imageArray = [Carouselmage, Carouselmagecopyone, Carouselmagecopytwo]
     }
 
-    componentDidMount(){
     
+    componentDidMount(){
+     //    var count = 0
     	// let changePicture = setInterval(() => { 
-    	// 	let {count} = this.state
-    	// 	let imageArray = [Carouselmage, Carouselmagecopyone, Carouselmagecopytwo]
-    	// 	this.setState((state) => ({count : state.count + 1}))
-    	// 	this.setState((state) => ({currentImage : imageArray[count]}))
-
+    	// 	count++;
+    	// 	this.setState((state) => ({currentImage : this.imageArray[count]}))
     	// 	if(count === 2){
-    	// 		this.setState((state) => ({count: 0}))
+    	// 		count = 0 
     	// 	}
     		
 
@@ -42,6 +40,20 @@ export default class Carousel extends Component {
     componentWillUnmount(){
   		 clearInterval(this.changePicture);
 	}
+
+    onClicChangeImage = (e) => {
+        let {picturePostion} = this.state 
+        if(picturePostion === 3){
+            this.setState((state) => ({picturePostion: 0}))
+            let postion = this.imageArray[this.state.picturePostion]
+            this.setState((state) => ({currentImage:postion}))
+        } else {
+            this.setState({picturePostion: this.state.picturePostion + 1})
+            let postion = this.imageArray[this.state.picturePostion]
+            this.setState({currentImage:postion})
+        }
+
+    }
 
     changeImage = (e) => {
     	let imageMap = {
@@ -56,8 +68,12 @@ export default class Carousel extends Component {
     render() {
         return (
         	 <div>
-        	 	<img className="Carouselmage img-fluid" alt="" 
-        	 	src={this.state.currentImage || Carouselmage} />,
+        	 	<img 
+                    className="Carouselmage img-fluid" 
+                    alt="" 
+        	 	    src={this.state.currentImage || Carouselmage} 
+                    onClick={this.onClicChangeImage}
+                    />
         	 	 <Dots change={this.changeImage}/>
         	 </div>
         );

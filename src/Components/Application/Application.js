@@ -6,6 +6,7 @@ import {
   Header 
 } from '../../Components/index';
 
+import '../../CSS/Application.css'
 
 export default class Application extends Component {
   render() {

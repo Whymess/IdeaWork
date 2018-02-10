@@ -1,0 +1,10 @@
+.Header {
+	position: relative;
+    left: 17%;
+    padding-bottom: 1em;
+}
+
+.Header_info {
+	position: relative;
+	left: 40%;
+}

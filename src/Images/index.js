@@ -7,3 +7,4 @@ export { default as Three} from './Three.png';
 export { default as Four} from './Four.png';
 export { default as Five} from './Five.png';
 export { default as Six} from './Six.png';
+export { default as Logo} from './Logo.png';
