@@ -1,0 +1,21 @@
+.card-title {
+	font-family: Springville;
+	font-size: 2em;
+}
+
+.card-text {
+	font-size: .5em;
+	font-family: ACaslonPro;
+}
+
+@font-face {
+    font-family: Springville;
+    src: url('../Fonts/Springville-Regular3.otf');
+}
+
+@font-face {
+    font-family: ACaslonPro;
+    src: url('../Fonts/ACaslonPro-Regular.otf');
+}
+
+

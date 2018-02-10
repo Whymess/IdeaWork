@@ -6,7 +6,7 @@ import '../../CSS/Header.css'
 export default (props) => {
 
 	return (
-			  <div className="row justify-content-around">
+			  <div className="row justify-content-around header_main">
 			    <div className="col-4">
 			      <img className="logo img-fluid" alt="" 
 			        	 	src={Logo} />
