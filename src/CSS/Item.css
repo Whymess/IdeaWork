@@ -9,6 +9,10 @@
     margin-top: 1.5em;
 }
 
+.linkToSomeWhere {
+	 font-family: ACaslonPro;
+}
+
 @font-face {
     font-family: Springville;
     src: url('../Fonts/Springville-Regular3.otf');
