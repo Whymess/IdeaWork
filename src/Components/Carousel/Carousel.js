@@ -24,16 +24,16 @@ export default class Carousel extends Component {
 
     
     componentDidMount(){
-     //    var count = 0
-    	// let changePicture = setInterval(() => { 
-    	// 	count++;
-    	// 	this.setState((state) => ({currentImage : this.imageArray[count]}))
-    	// 	if(count === 2){
-    	// 		count = 0 
-    	// 	}
+        var count = 0
+    	let changePicture = setInterval(() => { 
+    		count++;
+    		this.setState((state) => ({currentImage : this.imageArray[count]}))
+    		if(count === 2){
+    			count = 0 
+    		}
     		
 
-    	// }, 3000);
+    	}, 3000);
     }
 
 
